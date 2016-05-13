@@ -1,6 +1,6 @@
 var path = require('path');
 var CryptoJS = require("crypto-js");
-var Admin = require('../models/admin');
+var Admin = require('../models/Admin');
 
 exports.loginPage = function (req, res) {
     Admin.count({}).exec(function (err, count) {
