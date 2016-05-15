@@ -60,7 +60,7 @@
         <div class="ui error message" v-if="errorMessage">{{errorMessage}}</div>
     </div>
     <div class="ui container" v-else>
-        <h3 class="ui dividing header">{{questionnaire.title}} (已发布)</h3>
+        <h3 class="ui dividing header">{{questionnaire.title}} (已发布)</h3>        
         <table class="ui celled table">
             <thead>
             <tr>
@@ -91,6 +91,9 @@
         </h4>
         <h4 class="ui header">
             <a href="/result/{{questionnaire._id}}">统计数据</a>
+        </h4>
+         <h4 class="ui header">
+            <a href="/manage/">返回主页</a>
         </h4>
     </div>
 </div>
